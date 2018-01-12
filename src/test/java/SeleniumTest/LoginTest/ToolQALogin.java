@@ -4,10 +4,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class ToolQALogin {
-    public static WebDriver driver = null;
-    public static void main(String[] args) {
+    
+	public static WebDriver driver = null;
+	
+	@Test
+    public  void LoginTest() {
     //driver = new FirefoxDriver();
     	System. setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
     	// Initialize browser.
